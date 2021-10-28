@@ -1,4 +1,4 @@
-# Davee's Django Rest API Template
+# Django Backend
 
 ## Author: Davee Sok
 
