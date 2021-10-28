@@ -1,6 +1,6 @@
-# Django Backend
+# Project Backend
 
-## Author: Davee Sok
+## Author: Davee Sok, Daniel Dills, Prabin Singh, Wondwosen Tsige
 
 ## Links & Resources
 
