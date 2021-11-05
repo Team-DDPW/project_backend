@@ -4,6 +4,7 @@
 
 ## Links & Resources
 
+- [Link to API address](https://fastex-api.herokuapp.com/)
 - [Link to this Repo](https://github.com/daveeS987/template-davees-django-api)
 - [Django](https://docs.djangoproject.com/en/3.2/)
 - [Django Rest Framework](https://www.django-rest-framework.org/)
