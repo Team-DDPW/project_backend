@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "whitenoise",
     # Custom
     "accounts",
-    "xxxxx",
+    "packagerequest",
 ]
 
 MIDDLEWARE = [
