@@ -4,6 +4,7 @@
 
 ## Links & Resources
 
+- [Link to API address](https://fastex-api.herokuapp.com/)
 - [Link to this Repo](https://github.com/daveeS987/template-davees-django-api)
 - [Django](https://docs.djangoproject.com/en/3.2/)
 - [Django Rest Framework](https://www.django-rest-framework.org/)
@@ -67,15 +68,15 @@ DATABASE_PORT=5432
 
 - remember to rename .env.txt to .env
 
-#### 5. Replace all occurences of "Xxxxx" and "xxxxx" with your new app name
+#### 5. Replace all occurences of "PackageRequest" and "packagerequest" with your new app name
 
-- rename "xxxxx" folder to your new app name(use lower case). Example: xxxxx -> blog
-- Do a global search of "Xxxxx" and replace all occurences with your app name
-  - (For this step, app name needs to be a capital word) Example: Xxxxx -> Blog
+- rename "packagerequest" folder to your new app name(use lower case). Example: packagerequest -> blog
+- Do a global search of "PackageRequest" and replace all occurences with your app name
+  - (For this step, app name needs to be a capital word) Example: PackageRequest -> Blog
   - Make sure to select "Match Case" option. [Aa]
   - (There will only be 29 matches. If you see 44, you didn't check your case)
-- Do a global search of "xxxxx" and replace all occurences with your app name
-  - (For this step, app name needs to be a lower cased) Example: xxxxx -> blog
+- Do a global search of "packagerequest" and replace all occurences with your app name
+  - (For this step, app name needs to be a lower cased) Example: packagerequest -> blog
   - Make sure to select "Match Case" option. [Aa]
   - (There will only be 15 matches. If you see a differnt number, you didn't check your case)
 
