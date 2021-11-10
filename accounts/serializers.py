@@ -12,7 +12,9 @@ from a_project.settings import AUTH_USER_MODEL
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
-        fields = ('id','email','password')
+        # fields = ('id','email','password')
+        fields = '__all__'
+
         extra_kwargs = {
             'password':{'write_only': True},
         }
