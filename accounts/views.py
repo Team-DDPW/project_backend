@@ -5,6 +5,11 @@ from .serializers import RegisterSerializer, UserSerializer
 # from .models import CustomUser
 from django.conf import settings
 
+
+from rest_framework_simplejwt.views import TokenObtainPairView
+from rest_framework.permissions import AllowAny
+from .serializers import MyTokenObtainPairSerializer
+
 #Register API
 class RegisterApi(generics.GenericAPIView):
     # permission_classes = (permissions.AllowAny)
@@ -17,3 +22,8 @@ class RegisterApi(generics.GenericAPIView):
             "user": UserSerializer(user,    context=self.get_serializer_context()).data,
             "message": "User Created Successfully.  Now perform Login to get your token",
         })
+
+
+class MyObtainTokenPairView(TokenObtainPairView):
+    permission_classes = (AllowAny,)
+    serializer_class = MyTokenObtainPairSerializer
