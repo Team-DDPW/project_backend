@@ -7,6 +7,7 @@ from django.conf import settings
 
 #Register API
 class RegisterApi(generics.GenericAPIView):
+    # permission_classes = (permissions.AllowAny)
     serializer_class = RegisterSerializer
     def post(self, request, *args,  **kwargs):
         serializer = self.get_serializer(data=request.data)
