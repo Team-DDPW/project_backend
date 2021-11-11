@@ -10,7 +10,7 @@ class PackageRequest(models.Model):
     origin_country = models.CharField(max_length=64)
     destination_country = models.CharField(max_length=64)
     offer_price = models.FloatField(default=0)
-    deadline_date = models.DateField(null=True)
+    deadline_date = models.DateField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 
