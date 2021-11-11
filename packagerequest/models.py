@@ -3,10 +3,14 @@ from django.conf import settings
 
 
 class PackageRequest(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    title = models.CharField(max_length=64)
-    body = models.TextField(max_length=256)
-    # slug = models.SlugField(max_length=64, unique=True)
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    item_name = models.CharField(max_length=64)
+    item_description = models.TextField(max_length=256)
+    weight = models.IntegerField(default=0)
+    origin_country = models.CharField(max_length=64)
+    destination_country = models.CharField(max_length=64)
+    offer_price = models.FloatField(default=0)
+    deadline_date = models.DateField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
 

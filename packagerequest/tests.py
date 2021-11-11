@@ -11,12 +11,12 @@ class PackageRequestTest(TestCase):
         testuser1 = get_user_model().objects.create_user(email="test@gmail.com", password="pass")
         testuser1.save()
         test_packagerequest = PackageRequest.objects.create(
-            author=testuser1, title="Green Eggs and Ham", body="I do not like green eggs and ham, Sam I  am."
+            owner=testuser1, item_name="Green Eggs and Ham", body="I do not like green eggs and ham, Sam I  am."
         )
         test_packagerequest.save()
 
     def test_blog_content(self):
         packagerequest = PackageRequest.objects.get(id=1)
-        self.assertEqual(str(packagerequest.author), "test@gmail.com")
-        self.assertEqual(str(packagerequest.title), "Green Eggs and Ham")
-        self.assertEqual(str(packagerequest.body), "I do not like green eggs and ham, Sam I  am.")
+        self.assertEqual(str(packagerequest.owner), "test@gmail.com")
+        self.assertEqual(str(packagerequest.item_name), "Green Eggs and Ham")
+        self.assertEqual(str(packagerequest.item_description), "I do not like green eggs and ham, Sam I  am.")
