@@ -13,6 +13,7 @@ class PackageRequest(models.Model):
     deadline_date = models.DateField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
+    package_Main_Img = models.ImageField(upload_to='images/', null=True, blank=True)
 
     def __str__(self):
         return self.item_name
