@@ -3,7 +3,7 @@ from django.conf import settings
 
 
 class PackageRequest(models.Model):
-    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    owner = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, null=True, blank=True)
     item_name = models.CharField(max_length=64)
     item_description = models.TextField(max_length=256)
     weight = models.IntegerField(default=0)
