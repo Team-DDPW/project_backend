@@ -2,9 +2,6 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 from rest_framework import serializers
 from .models import CustomUser
 
-# from django.contrib.auth import authenticate
-# from django.contrib.auth.hashers import make_password
-
 
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
@@ -25,18 +22,10 @@ class RegisterSerializer(serializers.ModelSerializer):
         return user
 
 
-#
-#
-
-
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = CustomUser
         fields = "__all__"
-
-
-#
-#
 
 
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):

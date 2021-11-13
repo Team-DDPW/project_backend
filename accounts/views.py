@@ -1,4 +1,4 @@
-from rest_framework import generics  # permissions
+from rest_framework import generics 
 from rest_framework.response import Response
 from .serializers import RegisterSerializer, UserSerializer
 
@@ -9,7 +9,6 @@ from .serializers import MyTokenObtainPairSerializer
 
 
 class RegisterApi(generics.GenericAPIView):
-    # permission_classes = (permissions.AllowAny)
     serializer_class = RegisterSerializer
 
     def post(self, request, *args, **kwargs):

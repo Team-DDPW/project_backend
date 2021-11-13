@@ -1,6 +1,4 @@
-# Python 401 Final Project
-
-## Project Name: FastEx
+# FastEx Backend
 
 ## Team Sith Lords
 
@@ -27,12 +25,11 @@ Our vision was to create an app where packages can be sent to countries that lac
 
 ## Links and Resources
 
-- [front-End website](https://project-frontend-three.vercel.app/)
-- [FastEx site]()
-- [Trello](https://trello.com/b/rF1sdqfr/team-ddpw)
+- [FastEx site](https://fastex-project.vercel.app/)
+- [Link to API address](https://fastex-api.herokuapp.com/)
 - [Front End Repo](https://github.com/Team-DDPW/project-frontend)
 - [Back End Repo](https://github.com/Team-DDPW/project_backend)
-- [Link to API address](https://fastex-api.herokuapp.com/)
+- [Trello](https://trello.com/b/rF1sdqfr/team-ddpw)
 - [Django](https://docs.djangoproject.com/en/3.2/)
 - [Django Rest Framework](https://www.django-rest-framework.org/)
 - [Create Custom User Model](https://testdriven.io/blog/django-custom-user-model/)
@@ -53,3 +50,21 @@ Our vision was to create an app where packages can be sent to countries that lac
 - psycopg2-binary
 
 ## Getting Started
+
+Make sure to create .env
+
+```env
+SECRET_KEY=
+DEBUG=False
+
+ALLOWED_HOSTS=0.0.0.0,127.0.0.1,localhost
+ALLOW_ALL_ORIGINS=True
+ALLOWED_ORIGINS=http://localhost:3000
+
+DATABASE_ENGINE=django.db.backends.postgresql
+DATABASE_NAME=**Get this for ElephantSQL**
+DATABASE_USER=**Get this for ElephantSQL**
+DATABASE_PASSWORD=**Get this for ElephantSQL**
+DATABASE_HOST=**Get this for ElephantSQL**
+DATABASE_PORT=5432
+```

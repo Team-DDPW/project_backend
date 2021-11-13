@@ -1,6 +1,5 @@
 from django.test import TestCase
 
-# for some reason, we have to use get_user_model and not settings.AUTH_USER_MODEL
 from django.contrib.auth import get_user_model
 from .models import PackageRequest
 
