@@ -25,7 +25,7 @@ Our vision was to create an app where packages can be sent to countries that lac
 
 ## Links and Resources
 
-- [FastEx site](https://fastex-project.vercel.app/)
+- [FastEx site](https://fastex.netlify.app/)
 - [Link to API address](https://fastex-api.herokuapp.com/)
 - [Front End Repo](https://github.com/Team-DDPW/project-frontend)
 - [Back End Repo](https://github.com/Team-DDPW/project_backend)
